@@ -1,0 +1,142 @@
+* {
+  font-family: cursive;
+}
+
+h1 {
+  color: #a74d4d;
+  font-family: cursive;
+  font-style: bold;
+  text-align: center;
+}
+
+h2 {
+  color: #c87777;
+}
+
+h3 {
+  color: #d88484;
+}
+
+h4 {
+  color: #d88484;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #f3b4b4, #a74d4d);
+}
+
+main {
+  background-color: aliceblue;
+  width: auto;
+  border-radius: 15px;
+  padding: 15px;
+  margin: auto;
+  width: 70%;
+}
+
+img {
+  height: 300px;
+  width: 275px;
+  border-radius: 15px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 450px;
+  border: 1px solid #f1f1f1;
+  display: inline-block;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  display: inline-block;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  border-radius: 15px;
+}
+
+.flip-card-back {
+  background-color: #f3b4b4;
+  color: rgb(18, 17, 17);
+  transform: rotateY(180deg);
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.rest img {
+  width: auto;
+}
+
+.restaurant-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  gap: 20px;
+  margin: 20px;
+}
+
+.restaurant-right {
+  width: 40%;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.restaurant-left {
+  width: 40%;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap; /* permite quebra de linha */
+  justify-content: center; /* centraliza se sobrar espaço */
+  gap: 20px; /* espaçamento entre as divs */
+}
+
+.turist-places {
+  text-align: center;
+  width: 40%;
+  height: auto;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: inline-block;
+  gap: 20px;
+}
+
+.lista {
+  text-align: left;
+}
