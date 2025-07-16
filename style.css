@@ -1,10 +1,12 @@
 * {
   font-family: cursive;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 h1 {
   color: #a74d4d;
-  font-family: cursive;
   font-style: bold;
   text-align: center;
 }
@@ -21,8 +23,13 @@ h4 {
   color: #d88484;
 }
 
+li {
+  margin-left: 16px;
+}
+
 body {
   background-image: linear-gradient(to bottom, #f3b4b4, #a74d4d);
+  padding: 16px;
 }
 
 main {
@@ -31,7 +38,12 @@ main {
   border-radius: 15px;
   padding: 15px;
   margin: auto;
-  width: 70%;
+  width: 100%;
+  max-width: 1200px;
+}
+
+section {
+  padding: 16px;
 }
 
 img {
@@ -77,6 +89,7 @@ img {
 .flip-card-front {
   background-color: #bbb;
   border-radius: 15px;
+  padding: 16px;
 }
 
 .flip-card-back {
