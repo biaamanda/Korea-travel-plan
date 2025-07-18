@@ -60,7 +60,6 @@ img {
   display: inline-block;
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -71,12 +70,10 @@ img {
   display: inline-block;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -174,7 +171,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto; /* centraliza horizontalmente */
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
